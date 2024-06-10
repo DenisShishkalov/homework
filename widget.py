@@ -12,7 +12,8 @@ def mask_account_card(number: str) -> str:
         for i in number:
             if i.isalpha():
                 name_card += i
-        return f"{name_card} {n[: 4]} {name_card[4:6]}** **** {name_card[12:16]}"
+
+        return f"{name_card} {number[-16: -12]} {number[-11:-9]}** **** {number[-4:]}"
 
 print(mask_account_card(number="Счет 12246578657898764356"))
-print(mask_account_card(number= "Visa jgkghj 1245123412341234"))
+print(mask_account_card(number= "Visa 1245123412341234"))
