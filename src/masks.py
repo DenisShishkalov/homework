@@ -8,6 +8,6 @@ def get_mask_account(number: str) -> str:
         return "Введены некоректные данные"
 
 
-print(get_mask_account(number="3234123412341234"))
-print(get_mask_account(number="53125674431399887757"))
-print(get_mask_account(number="fdgswe4252312653467547"))
+# print(get_mask_account(number="3234123412341234"))
+# print(get_mask_account(number="53125674431399887757"))
+# print(get_mask_account(number="fdgswe4252312653467547"))
