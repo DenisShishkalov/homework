@@ -5,7 +5,8 @@ def get_mask_account(number: str) -> str:
     elif str(number).isdigit() and len(number) == 20:
         return f"**{number[-4::]}"
     else:
-        return "Введены некоректные данные"
+        pass
+        # return "Введены некоректные данные"
 
 
 # print(get_mask_account(number="3234123412341234"))
