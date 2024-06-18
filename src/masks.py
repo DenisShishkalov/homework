@@ -1,12 +1,18 @@
 def get_mask_account(number: str) -> str:
     """Функция, маскирующая номер счета или карты"""
-    if str(number).isdigit() and len(number) == 16:
+
+    if str(number) == "":
+        raise AssertionError
+
+    # if str(number).isalpha() or len(number) != 16:
+    #     raise ValueError('Ошибка')
+    elif str(number).isdigit() and len(number) == 16:
         return f"{number[:4]} {number[4:6]}** **** {number[12:]}"
     elif str(number).isdigit() and len(number) == 20:
         return f"**{number[-4::]}"
     else:
-        pass
-        # return "Введены некоректные данные"
+        # pass
+        raise ValueError("Введены некоректные данные")
 
 
 # print(get_mask_account(number="3234123412341234"))
