@@ -1,9 +1,10 @@
 def mask_account_card(number: str) -> str:
-    """ Функция принимает номер карты или номер счета"""
+    """ Функция принимает номер карты или номер счета
+    :rtype: object
+    """
     name_card = ''
-    # full_number = list(number).remove(number_card)
+
     if "Счет " in number or "Счёт " in number:
-        # return get_mask_account(number)
         return f"Счет **{number[-4:]}"
     else:
         for i in number:

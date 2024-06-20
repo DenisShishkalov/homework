@@ -2,21 +2,14 @@ import pytest
 from src.masks import get_mask_account
 
 
-def test_get_mask_account_number(number):
-    assert get_mask_account(number)
+def test_get_mask_account_number_for_card(number_for_file_masks):
+    assert get_mask_account('3234123412341234') == number_for_file_masks
 
 
-def test_get_mask_account_invalid_len_and_letters():
-    with pytest.raises(ValueError):
-        get_mask_account('1245fgjdf125326jfgddfgg')
+def test_get_mask_account_for_account(number_for_account_for_file_masks):
+    assert get_mask_account("53125674431399887757") == number_for_account_for_file_masks
 
 
-def test_get_mask_account_not_number():
-    with pytest.raises(AssertionError):
-        get_mask_account("")
+def test_get_mask_account_letter(letter_for_file_masks):
+    assert get_mask_account("fdgswe4252312653467547") == letter_for_file_masks
 
-# @pytest.mark.parametrize('1335466534'
-#                          '109364294093910194')
-# def test_get_mask_account_len_number():
-#     with pytest.raises(AssertionError):
-#         get_mask_account(number)
