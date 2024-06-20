@@ -17,5 +17,11 @@ def test_mask_account(number_account_for_file_widget):
     assert mask_account_card("Счет 12246578657898764356") == number_account_for_file_widget
 
 
-def test_get_data(data):
-    assert get_data("2018-07-11T02:26:18.671407") == data
+# def test_get_data(data):
+#     assert get_data("2018-07-11T02:26:18.671407") == data
+
+
+@pytest.mark.parametrize('value, expected', [
+            ("2018-07-11T02:26:18.671407", "11.07.2018"),])
+def test_get_data(value,expected):
+    assert get_data(value) == expected

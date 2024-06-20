@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="706efac5-6c18-49d7-95b5-7f94d1bca72d" name="Changes" comment="update test widget">
+    <list default="true" id="706efac5-6c18-49d7-95b5-7f94d1bca72d" name="Changes" comment="update tests masks and test widget">
+      <change afterPath="$PROJECT_DIR$/tests/test_processing.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/masks.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/masks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/widget.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/processing.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_masks.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_masks.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_widget.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,10 +42,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Python tests for test_masks.test_get_mask_account_for_account.executor": "Run",
     "Python tests.Python tests for test_masks.test_get_mask_account_invalid_len.executor": "Run",
     "Python tests.Python tests for test_masks.test_get_mask_account_letter.executor": "Run",
     "Python tests.Python tests for test_masks.test_get_mask_account_number.executor": "Run",
     "Python tests.Python tests for test_masks.test_get_mask_account_number_none.executor": "Run",
+    "Python tests.Python tests for test_processing.test_filter_by_state.executor": "Run",
     "Python tests.Python tests for test_widget.test_get_data.executor": "Run",
     "Python tests.Python tests for test_widget.test_mask_account_card.executor": "Run",
     "Python tests.Python tests for test_widget.test_mask_account_none.executor": "Run",
@@ -64,7 +65,7 @@
       <recent name="C:\Users\Денис\PycharmProjects\01\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_masks.test_get_mask_account_for_account">
+  <component name="RunManager" selected="Python tests.Python tests for test_processing.test_filter_by_state">
     <configuration name="Python tests for test_masks.test_get_mask_account_for_account" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="01" />
       <option name="ENV_FILES" value="" />
@@ -110,7 +111,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_masks.test_get_mask_account_number_none" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_processing.test_filter_by_state" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="01" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -121,11 +122,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_masks.test_get_mask_account_number_none&quot;" />
+      <option name="_new_target" value="&quot;test_processing.test_filter_by_state&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_widget.test_mask_account_card" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_widget.test_get_data" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="01" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -136,7 +137,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_widget.test_mask_account_card&quot;" />
+      <option name="_new_target" value="&quot;test_widget.test_get_data&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -163,16 +164,16 @@
       <item itemvalue="Python tests.Python tests for test_masks.test_get_mask_account_for_account" />
       <item itemvalue="Python tests.Python tests for test_masks.test_get_mask_account_letter" />
       <item itemvalue="Python tests.Python tests for test_masks.test_get_mask_account_number" />
-      <item itemvalue="Python tests.Python tests for test_masks.test_get_mask_account_number_none" />
-      <item itemvalue="Python tests.Python tests for test_widget.test_mask_account_card" />
+      <item itemvalue="Python tests.Python tests for test_processing.test_filter_by_state" />
+      <item itemvalue="Python tests.Python tests for test_widget.test_get_data" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_processing.test_filter_by_state" />
+        <item itemvalue="Python tests.Python tests for test_widget.test_get_data" />
         <item itemvalue="Python tests.Python tests for test_masks.test_get_mask_account_for_account" />
         <item itemvalue="Python tests.Python tests for test_masks.test_get_mask_account_number" />
         <item itemvalue="Python tests.Python tests for test_masks.test_get_mask_account_letter" />
-        <item itemvalue="Python tests.Python tests for test_widget.test_mask_account_card" />
-        <item itemvalue="Python tests.Python tests for test_masks.test_get_mask_account_number_none" />
       </list>
     </recent_temporary>
   </component>
@@ -208,12 +209,21 @@
       <option name="project" value="LOCAL" />
       <updated>1718865814355</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update tests masks and test widget">
+      <option name="closed" value="true" />
+      <created>1718870939480</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718870939480</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test widget" />
     <MESSAGE value="update test widget" />
-    <option name="LAST_COMMIT_MESSAGE" value="update test widget" />
+    <MESSAGE value="update tests masks and test widget" />
+    <option name="LAST_COMMIT_MESSAGE" value="update tests masks and test widget" />
   </component>
 </project>
