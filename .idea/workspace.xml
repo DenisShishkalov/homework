@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="706efac5-6c18-49d7-95b5-7f94d1bca72d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/widget.py" afterDir="false" />
-    </list>
+    <list default="true" id="706efac5-6c18-49d7-95b5-7f94d1bca72d" name="Changes" comment="full update tests" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +18,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/homework_10_1" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -34,11 +36,142 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Python tests for test_masks.test_get_mask_account_for_account.executor": "Run",
+    "Python tests.Python tests for test_masks.test_get_mask_account_invalid_len.executor": "Run",
+    "Python tests.Python tests for test_masks.test_get_mask_account_letter.executor": "Run",
+    "Python tests.Python tests for test_masks.test_get_mask_account_number.executor": "Run",
+    "Python tests.Python tests for test_masks.test_get_mask_account_number_none.executor": "Run",
+    "Python tests.Python tests for test_processing.test_filter_by_state.executor": "Run",
+    "Python tests.Python tests for test_processing.test_sort_by_date.executor": "Run",
+    "Python tests.Python tests for test_widget.test_get_data.executor": "Run",
+    "Python tests.Python tests for test_widget.test_mask_account_card.executor": "Run",
+    "Python tests.Python tests for test_widget.test_mask_account_none.executor": "Run",
+    "Python tests.Python tests in test_widget.py.executor": "Run",
+    "Python tests.pytest in tests.executor": "Run",
+    "Python.processing.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "feature/homework__10__2",
+    "last_opened_file_path": "C:/Users/Денис/PycharmProjects/01/tests",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Денис\PycharmProjects\01\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.Python tests for test_processing.test_sort_by_date">
+    <configuration name="Python tests for test_masks.test_get_mask_account_for_account" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="01" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_masks.test_get_mask_account_for_account&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_masks.test_get_mask_account_number" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="01" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_masks.test_get_mask_account_number&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_processing.test_filter_by_state" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="01" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_processing.test_filter_by_state&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_processing.test_sort_by_date" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="01" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_processing.test_sort_by_date&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_widget.test_get_data" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="01" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_widget.test_get_data&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in tests" type="tests" factoryName="py.test" nameIsGenerated="true">
+      <module name="01" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Poetry (01)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;C:\\Users\\Денис\\PycharmProjects\\01\\tests&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python tests.pytest in tests" />
+      <item itemvalue="Python tests.Python tests for test_processing.test_sort_by_date" />
+      <item itemvalue="Python tests.Python tests for test_masks.test_get_mask_account_for_account" />
+      <item itemvalue="Python tests.Python tests for test_masks.test_get_mask_account_number" />
+      <item itemvalue="Python tests.Python tests for test_processing.test_filter_by_state" />
+      <item itemvalue="Python tests.Python tests for test_widget.test_get_data" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for test_processing.test_sort_by_date" />
+        <item itemvalue="Python tests.Python tests for test_processing.test_filter_by_state" />
+        <item itemvalue="Python tests.Python tests for test_widget.test_get_data" />
+        <item itemvalue="Python tests.Python tests for test_masks.test_get_mask_account_for_account" />
+        <item itemvalue="Python tests.Python tests for test_masks.test_get_mask_account_number" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -55,6 +188,46 @@
       <option name="presentableId" value="Default" />
       <updated>1717853054888</updated>
     </task>
+    <task id="LOCAL-00001" summary="test widget">
+      <option name="closed" value="true" />
+      <created>1718743384863</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1718743384863</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update test widget">
+      <option name="closed" value="true" />
+      <created>1718865814355</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718865814355</updated>
+    </task>
+    <task id="LOCAL-00003" summary="update tests masks and test widget">
+      <option name="closed" value="true" />
+      <created>1718870939480</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718870939480</updated>
+    </task>
+    <task id="LOCAL-00004" summary="full update tests">
+      <option name="closed" value="true" />
+      <created>1718877989516</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718877989516</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test widget" />
+    <MESSAGE value="update test widget" />
+    <MESSAGE value="update tests masks and test widget" />
+    <MESSAGE value="full update tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="full update tests" />
   </component>
 </project>
