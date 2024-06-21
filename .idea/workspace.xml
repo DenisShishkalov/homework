@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="706efac5-6c18-49d7-95b5-7f94d1bca72d" name="Changes" comment="full update tests">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_processing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_widget.py" afterDir="false" />
-    </list>
+    <list default="true" id="706efac5-6c18-49d7-95b5-7f94d1bca72d" name="Changes" comment="full update tests" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,32 +34,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests for test_masks.test_get_mask_account_for_account.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_masks.test_get_mask_account_invalid_len.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_masks.test_get_mask_account_letter.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_masks.test_get_mask_account_number.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_masks.test_get_mask_account_number_none.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_processing.test_filter_by_state.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_widget.test_get_data.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_widget.test_mask_account_card.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_widget.test_mask_account_none.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_widget.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.pytest in tests.executor&quot;: &quot;Run&quot;,
-    &quot;Python.processing.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/homework__10__2&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Денис/PycharmProjects/01/tests&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests for test_masks.test_get_mask_account_for_account.executor": "Run",
+    "Python tests.Python tests for test_masks.test_get_mask_account_invalid_len.executor": "Run",
+    "Python tests.Python tests for test_masks.test_get_mask_account_letter.executor": "Run",
+    "Python tests.Python tests for test_masks.test_get_mask_account_number.executor": "Run",
+    "Python tests.Python tests for test_masks.test_get_mask_account_number_none.executor": "Run",
+    "Python tests.Python tests for test_processing.test_filter_by_state.executor": "Run",
+    "Python tests.Python tests for test_processing.test_sort_by_date.executor": "Run",
+    "Python tests.Python tests for test_widget.test_get_data.executor": "Run",
+    "Python tests.Python tests for test_widget.test_mask_account_card.executor": "Run",
+    "Python tests.Python tests for test_widget.test_mask_account_none.executor": "Run",
+    "Python tests.Python tests in test_widget.py.executor": "Run",
+    "Python tests.pytest in tests.executor": "Run",
+    "Python.processing.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "feature/homework__10__2",
+    "last_opened_file_path": "C:/Users/Денис/PycharmProjects/01/tests",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Денис\PycharmProjects\01\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_processing.test_filter_by_state">
+  <component name="RunManager" selected="Python tests.Python tests for test_processing.test_sort_by_date">
     <configuration name="Python tests for test_masks.test_get_mask_account_for_account" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="01" />
       <option name="ENV_FILES" value="" />
@@ -76,21 +73,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_masks.test_get_mask_account_for_account&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_masks.test_get_mask_account_letter" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="01" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_masks.test_get_mask_account_letter&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -121,6 +103,21 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_processing.test_filter_by_state&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_processing.test_sort_by_date" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="01" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_processing.test_sort_by_date&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -159,19 +156,19 @@
     </configuration>
     <list>
       <item itemvalue="Python tests.pytest in tests" />
+      <item itemvalue="Python tests.Python tests for test_processing.test_sort_by_date" />
       <item itemvalue="Python tests.Python tests for test_masks.test_get_mask_account_for_account" />
-      <item itemvalue="Python tests.Python tests for test_masks.test_get_mask_account_letter" />
       <item itemvalue="Python tests.Python tests for test_masks.test_get_mask_account_number" />
       <item itemvalue="Python tests.Python tests for test_processing.test_filter_by_state" />
       <item itemvalue="Python tests.Python tests for test_widget.test_get_data" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_processing.test_sort_by_date" />
         <item itemvalue="Python tests.Python tests for test_processing.test_filter_by_state" />
         <item itemvalue="Python tests.Python tests for test_widget.test_get_data" />
         <item itemvalue="Python tests.Python tests for test_masks.test_get_mask_account_for_account" />
         <item itemvalue="Python tests.Python tests for test_masks.test_get_mask_account_number" />
-        <item itemvalue="Python tests.Python tests for test_masks.test_get_mask_account_letter" />
       </list>
     </recent_temporary>
   </component>
