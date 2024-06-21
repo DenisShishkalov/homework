@@ -23,5 +23,5 @@ def test_mask_account(number_account_for_file_widget):
 
 @pytest.mark.parametrize('value, expected', [
             ("2018-07-11T02:26:18.671407", "11.07.2018"),])
-def test_get_data(value,expected):
+def test_get_data(value, expected):
     assert get_data(value) == expected
