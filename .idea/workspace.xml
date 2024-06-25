@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="706efac5-6c18-49d7-95b5-7f94d1bca72d" name="Changes" comment="full update tests" />
+    <list default="true" id="706efac5-6c18-49d7-95b5-7f94d1bca72d" name="Changes" comment="homework_10_2 done">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,33 +36,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests for test_masks.test_get_mask_account_for_account.executor": "Run",
-    "Python tests.Python tests for test_masks.test_get_mask_account_invalid_len.executor": "Run",
-    "Python tests.Python tests for test_masks.test_get_mask_account_letter.executor": "Run",
-    "Python tests.Python tests for test_masks.test_get_mask_account_number.executor": "Run",
-    "Python tests.Python tests for test_masks.test_get_mask_account_number_none.executor": "Run",
-    "Python tests.Python tests for test_processing.test_filter_by_state.executor": "Run",
-    "Python tests.Python tests for test_processing.test_sort_by_date.executor": "Run",
-    "Python tests.Python tests for test_widget.test_get_data.executor": "Run",
-    "Python tests.Python tests for test_widget.test_mask_account_card.executor": "Run",
-    "Python tests.Python tests for test_widget.test_mask_account_none.executor": "Run",
-    "Python tests.Python tests in test_widget.py.executor": "Run",
-    "Python tests.pytest in tests.executor": "Run",
-    "Python.processing.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/homework__10__2",
-    "last_opened_file_path": "C:/Users/Денис/PycharmProjects/01/tests",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for test_masks.test_get_mask_account_for_account.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_masks.test_get_mask_account_invalid_len.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_masks.test_get_mask_account_letter.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_masks.test_get_mask_account_number.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_masks.test_get_mask_account_number_none.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_processing.test_filter_by_state.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_processing.test_sort_by_date.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_widget.test_get_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_widget.test_mask_account_card.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_widget.test_mask_account_none.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_widget.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in tests.executor&quot;: &quot;Run&quot;,
+    &quot;Python.processing.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/homework__10__2&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Денис/PycharmProjects/01/tests&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Денис\PycharmProjects\01\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_processing.test_sort_by_date">
+  <component name="RunManager" selected="Python tests.Python tests for test_processing.test_filter_by_state">
     <configuration name="Python tests for test_masks.test_get_mask_account_for_account" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="01" />
       <option name="ENV_FILES" value="" />
@@ -155,17 +157,17 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.pytest in tests" />
-      <item itemvalue="Python tests.Python tests for test_processing.test_sort_by_date" />
       <item itemvalue="Python tests.Python tests for test_masks.test_get_mask_account_for_account" />
       <item itemvalue="Python tests.Python tests for test_masks.test_get_mask_account_number" />
       <item itemvalue="Python tests.Python tests for test_processing.test_filter_by_state" />
+      <item itemvalue="Python tests.Python tests for test_processing.test_sort_by_date" />
       <item itemvalue="Python tests.Python tests for test_widget.test_get_data" />
+      <item itemvalue="Python tests.pytest in tests" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_processing.test_sort_by_date" />
         <item itemvalue="Python tests.Python tests for test_processing.test_filter_by_state" />
+        <item itemvalue="Python tests.Python tests for test_processing.test_sort_by_date" />
         <item itemvalue="Python tests.Python tests for test_widget.test_get_data" />
         <item itemvalue="Python tests.Python tests for test_masks.test_get_mask_account_for_account" />
         <item itemvalue="Python tests.Python tests for test_masks.test_get_mask_account_number" />
@@ -220,7 +222,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718877989516</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="homework_10_2 done">
+      <option name="closed" value="true" />
+      <created>1718970459370</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718970459370</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -228,6 +238,7 @@
     <MESSAGE value="update test widget" />
     <MESSAGE value="update tests masks and test widget" />
     <MESSAGE value="full update tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="full update tests" />
+    <MESSAGE value="homework_10_2 done" />
+    <option name="LAST_COMMIT_MESSAGE" value="homework_10_2 done" />
   </component>
 </project>
