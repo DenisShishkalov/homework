@@ -1,3 +1,6 @@
+from typing import Any
+
+
 transactions = (
     [
         {
@@ -79,3 +82,23 @@ transactions = (
 )
 
 
+def filter_by_currency(trans: list, currency: str) -> Any:
+    """ Функция, принимающая список словарей, и возвращающая итератор с заданной валютой"""
+
+    for k in trans:
+        if k["operationAmount"]["currency"].get("code") == currency:
+            yield k["id"]
+
+
+usd_transactions = filter_by_currency(transactions, "USD")
+
+for func1 in range(3):
+    print(next(usd_transactions))
+
+
+def
+
+descriptions = transaction_descriptions(transactions)
+
+for func2 in range(5):
+    print(next(descriptions))
