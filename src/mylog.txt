@@ -1,14 +1,7 @@
-my_function okmy_function okmy_function okmy_function ok
-
+my_function okmy_function ok
 my_function ok
 my_function ok
+my_function error: can only concatenate list (not "str") to list Inputs: (['fdh'], 'gfh'), {}
+my_function error: can only concatenate list (not "str") to list Inputs: (['fdh'], 'gfh'), {}
 my_function ok
-my_function ok
-my_function ok
-my_function ok
-my_function ok
-my_function ok
-my_function ok
-my_function ok
-my_function okmy_function error: TextIOWrapper.write() takes exactly one argument (2 given) Inputs: (1, 2), {}
 my_function ok
