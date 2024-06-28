@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="706efac5-6c18-49d7-95b5-7f94d1bca72d" name="Changes" comment="add html test_statistic">
+    <list default="true" id="706efac5-6c18-49d7-95b5-7f94d1bca72d" name="Changes" comment="add file test decorators">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/decorators.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/homework_10_2" />
+        <entry key="$PROJECT_DIR$" value="feature/homework_11_1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -36,38 +37,71 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests for test_generators.test_card_number_generator.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_generators.test_filter_by_currency.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_generators.test_transaction_descriptions.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_masks.test_get_mask_account_for_account.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_masks.test_get_mask_account_invalid_len.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_masks.test_get_mask_account_letter.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_masks.test_get_mask_account_number.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_masks.test_get_mask_account_number_none.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_processing.test_filter_by_state.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_processing.test_sort_by_date.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_widget.test_get_data.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_widget.test_mask_account_card.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_widget.test_mask_account_none.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_generators.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_widget.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.pytest in tests.executor&quot;: &quot;Run&quot;,
-    &quot;Python.generators.executor&quot;: &quot;Run&quot;,
-    &quot;Python.processing.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/homework__11__1&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Денис/PycharmProjects/01/tests&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests for test_decorators.test_log.executor": "Run",
+    "Python tests.Python tests for test_decorators.test_log_exeption.executor": "Run",
+    "Python tests.Python tests for test_generators.test_card_number_generator.executor": "Run",
+    "Python tests.Python tests for test_generators.test_filter_by_currency.executor": "Run",
+    "Python tests.Python tests for test_generators.test_transaction_descriptions.executor": "Run",
+    "Python tests.Python tests for test_masks.test_get_mask_account_for_account.executor": "Run",
+    "Python tests.Python tests for test_masks.test_get_mask_account_invalid_len.executor": "Run",
+    "Python tests.Python tests for test_masks.test_get_mask_account_letter.executor": "Run",
+    "Python tests.Python tests for test_masks.test_get_mask_account_number.executor": "Run",
+    "Python tests.Python tests for test_masks.test_get_mask_account_number_none.executor": "Run",
+    "Python tests.Python tests for test_processing.test_filter_by_state.executor": "Run",
+    "Python tests.Python tests for test_processing.test_sort_by_date.executor": "Run",
+    "Python tests.Python tests for test_widget.test_get_data.executor": "Run",
+    "Python tests.Python tests for test_widget.test_mask_account_card.executor": "Run",
+    "Python tests.Python tests for test_widget.test_mask_account_none.executor": "Run",
+    "Python tests.Python tests in test_generators.py.executor": "Run",
+    "Python tests.Python tests in test_widget.py.executor": "Run",
+    "Python tests.pytest in tests.executor": "Run",
+    "Python.decorators.executor": "Run",
+    "Python.generators.executor": "Run",
+    "Python.processing.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "feature/homework__11__2",
+    "last_opened_file_path": "C:/Users/Денис/PycharmProjects/01/tests",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Денис\PycharmProjects\01\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_generators.test_card_number_generator">
+  <component name="RunManager" selected="Python tests.Python tests for test_decorators.test_log_exeption">
+    <configuration name="Python tests for test_decorators.test_log" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="01" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_decorators.test_log&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_decorators.test_log_exeption" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="01" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_decorators.test_log_exeption&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for test_generators.test_card_number_generator" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="01" />
       <option name="ENV_FILES" value="" />
@@ -113,36 +147,6 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_processing.test_filter_by_state" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="01" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_processing.test_filter_by_state&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_processing.test_sort_by_date" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="01" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_processing.test_sort_by_date&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="pytest in tests" type="tests" factoryName="py.test" nameIsGenerated="true">
       <module name="01" />
       <option name="ENV_FILES" value="" />
@@ -162,20 +166,20 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python tests.pytest in tests" />
+      <item itemvalue="Python tests.Python tests for test_decorators.test_log" />
+      <item itemvalue="Python tests.Python tests for test_decorators.test_log_exeption" />
       <item itemvalue="Python tests.Python tests for test_generators.test_card_number_generator" />
       <item itemvalue="Python tests.Python tests for test_generators.test_filter_by_currency" />
       <item itemvalue="Python tests.Python tests for test_generators.test_transaction_descriptions" />
-      <item itemvalue="Python tests.Python tests for test_processing.test_filter_by_state" />
-      <item itemvalue="Python tests.Python tests for test_processing.test_sort_by_date" />
-      <item itemvalue="Python tests.pytest in tests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_decorators.test_log_exeption" />
+        <item itemvalue="Python tests.Python tests for test_decorators.test_log" />
         <item itemvalue="Python tests.Python tests for test_generators.test_card_number_generator" />
         <item itemvalue="Python tests.Python tests for test_generators.test_transaction_descriptions" />
         <item itemvalue="Python tests.Python tests for test_generators.test_filter_by_currency" />
-        <item itemvalue="Python tests.Python tests for test_processing.test_filter_by_state" />
-        <item itemvalue="Python tests.Python tests for test_processing.test_sort_by_date" />
       </list>
     </recent_temporary>
   </component>
@@ -251,7 +255,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719319414307</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add file test decorators">
+      <option name="closed" value="true" />
+      <created>1719594802619</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1719594802619</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -262,6 +274,7 @@
     <MESSAGE value="homework_10_2 done" />
     <MESSAGE value="create func transaction_descriptions" />
     <MESSAGE value="add html test_statistic" />
-    <option name="LAST_COMMIT_MESSAGE" value="add html test_statistic" />
+    <MESSAGE value="add file test decorators" />
+    <option name="LAST_COMMIT_MESSAGE" value="add file test decorators" />
   </component>
 </project>
