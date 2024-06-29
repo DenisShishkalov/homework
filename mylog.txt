@@ -1,0 +1,15 @@
+
+my_function error: can only concatenate list (not "str") to list Inputs: (['fdh'], 'gfh'), {}
+my_function ok
+my_function error: can only concatenate list (not "str") to list Inputs: (['fdh'], 'gfh'), {}
+my_function error: can only concatenate list (not "str") to list Inputs: (['fdh'], 'gfh'), {}
+my_function error: can only concatenate list (not "str") to list Inputs: (['fdh'], 'gfh'), {}
+my_function error: can only concatenate list (not "str") to list Inputs: (['fdh'], 'gfh'), {}
+my_function error: can only concatenate list (not "str") to list Inputs: (['fdh'], 'gfh'), {}
+my_function ok
+my_function ok
+my_function ok
+my_function ok
+my_function ok
+my_function ok
+my_function error: my_function() missing 2 required positional arguments: 'x' and 'y' Inputs: (), {}
