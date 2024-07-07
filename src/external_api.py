@@ -1,5 +1,10 @@
+import os
 from typing import Any
 import requests
+from dotenv import load_dotenv
+
+load_dotenv()
+
 
 
 def return_amount_trans(transactions: Any, cur) -> float:
@@ -12,9 +17,11 @@ def return_amount_trans(transactions: Any, cur) -> float:
         return amount
     else:
         url = f"https://api.apilayer.com/exchangerates_data/convert?to={cur}&from={currency}&amount={amount}"
+        apikey = os.getenv('apikey')
         headers = {
-            "apikey": "AJ57MO1ENPdazTOcBs3DFXxSxN2kegOK"
+            "apikey":f'{apikey}'
         }
+
         response = requests.get(url, headers=headers)
         status_code = response.status_code
         print(f"Статус код: {status_code}")
