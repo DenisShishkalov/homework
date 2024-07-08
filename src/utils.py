@@ -14,7 +14,7 @@ def get_info(file_json: str) -> Any:
             trans = json.load(f)
             return trans
 
-        except Exception:
+        except [FileNotFoundError, json.JSONDecodeError]:
             return []
 
 

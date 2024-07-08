@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="706efac5-6c18-49d7-95b5-7f94d1bca72d" name="Changes" comment="fix test utils">
+    <list default="true" id="706efac5-6c18-49d7-95b5-7f94d1bca72d" name="Changes" comment="done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mylog.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/external_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/external_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,42 +39,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests for test_decorators.test_log.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_decorators.test_log_exeption.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_external_api.test_return_amount_trans.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_generators.test_card_number_generator.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_generators.test_filter_by_currency.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_generators.test_transaction_descriptions.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_masks.test_get_mask_account_for_account.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_masks.test_get_mask_account_invalid_len.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_masks.test_get_mask_account_letter.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_masks.test_get_mask_account_number.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_masks.test_get_mask_account_number_none.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_processing.test_filter_by_state.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_processing.test_sort_by_date.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_utils.test_get_info.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_widget.test_get_data.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_widget.test_mask_account_card.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_widget.test_mask_account_none.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_external_api.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_generators.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_widget.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.pytest in tests.executor&quot;: &quot;Run&quot;,
-    &quot;Python.decorators.executor&quot;: &quot;Run&quot;,
-    &quot;Python.external_api.executor&quot;: &quot;Run&quot;,
-    &quot;Python.generators.executor&quot;: &quot;Run&quot;,
-    &quot;Python.proba.executor&quot;: &quot;Run&quot;,
-    &quot;Python.processing.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.utils.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/homework__12__1&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Денис/PycharmProjects/01/tests&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests for test_decorators.test_log.executor": "Run",
+    "Python tests.Python tests for test_decorators.test_log_exeption.executor": "Run",
+    "Python tests.Python tests for test_external_api.test_return_amount_trans.executor": "Run",
+    "Python tests.Python tests for test_generators.test_card_number_generator.executor": "Run",
+    "Python tests.Python tests for test_generators.test_filter_by_currency.executor": "Run",
+    "Python tests.Python tests for test_generators.test_transaction_descriptions.executor": "Run",
+    "Python tests.Python tests for test_masks.test_get_mask_account_for_account.executor": "Run",
+    "Python tests.Python tests for test_masks.test_get_mask_account_invalid_len.executor": "Run",
+    "Python tests.Python tests for test_masks.test_get_mask_account_letter.executor": "Run",
+    "Python tests.Python tests for test_masks.test_get_mask_account_number.executor": "Run",
+    "Python tests.Python tests for test_masks.test_get_mask_account_number_none.executor": "Run",
+    "Python tests.Python tests for test_processing.test_filter_by_state.executor": "Run",
+    "Python tests.Python tests for test_processing.test_sort_by_date.executor": "Run",
+    "Python tests.Python tests for test_utils.test_get_info.executor": "Run",
+    "Python tests.Python tests for test_widget.test_get_data.executor": "Run",
+    "Python tests.Python tests for test_widget.test_mask_account_card.executor": "Run",
+    "Python tests.Python tests for test_widget.test_mask_account_none.executor": "Run",
+    "Python tests.Python tests in test_external_api.py.executor": "Run",
+    "Python tests.Python tests in test_generators.py.executor": "Run",
+    "Python tests.Python tests in test_utils.py.executor": "Run",
+    "Python tests.Python tests in test_widget.py.executor": "Run",
+    "Python tests.pytest in tests.executor": "Run",
+    "Python.decorators.executor": "Run",
+    "Python.external_api.executor": "Run",
+    "Python.generators.executor": "Run",
+    "Python.proba.executor": "Run",
+    "Python.processing.executor": "Run",
+    "Python.test.executor": "Run",
+    "Python.utils.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "feature/homework__12__1",
+    "last_opened_file_path": "C:/Users/Денис/PycharmProjects/01/tests",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Денис\PycharmProjects\01\src" />
@@ -334,7 +336,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720446005128</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="done">
+      <option name="closed" value="true" />
+      <created>1720446748043</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1720446748043</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -347,10 +357,10 @@
     <MESSAGE value="add html test_statistic" />
     <MESSAGE value="add file test decorators" />
     <MESSAGE value="error correction docstring decorator" />
-    <MESSAGE value="done" />
     <MESSAGE value="add func get_info" />
     <MESSAGE value="add .env.example" />
     <MESSAGE value="fix test utils" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix test utils" />
+    <MESSAGE value="done" />
+    <option name="LAST_COMMIT_MESSAGE" value="done" />
   </component>
 </project>

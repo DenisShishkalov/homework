@@ -1,30 +1,30 @@
 import os
-from typing import Any
 import requests
 from dotenv import load_dotenv
 
 load_dotenv()
 
 
-def return_amount_trans(transactions: Any) -> Any:
+def return_amount_trans(transactions: dict) -> float:
     """
     Функция, которая принимает на вход транзакцию и возвращает сумму транзакции (amount) в рублях
     """
     amount = transactions["operationAmount"]["amount"]
     currency = transactions["operationAmount"]['currency']['code']
     if currency == 'RUB':
-        return amount
+        return float(amount)
     else:
         url = f"https://api.apilayer.com/exchangerates_data/convert?to=RUB&from={currency}&amount={amount}"
-        API_Layer = os.getenv('API_Layer')
+        API_KEY = os.getenv('API_KEY')
         headers = {
-            "apikey": f'{API_Layer}'
+            "apikey": f'{API_KEY}'
         }
 
         response = requests.get(url, headers=headers)
         status_code = response.status_code
         print(f"Статус код: {status_code}")
-        return response.json()
+        data = response.json()
+        return float(data['result'])
 
 
 if __name__ == '__main__':
