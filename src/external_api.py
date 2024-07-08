@@ -16,9 +16,9 @@ def return_amount_trans(transactions: Any) -> float:
         return amount
     else:
         url = f"https://api.apilayer.com/exchangerates_data/convert?to=RUB&from={currency}&amount={amount}"
-        apikey = os.getenv('apikey')
+        API_Layer = os.getenv('API_Layer')
         headers = {
-            "apikey":f'{apikey}'
+            "apikey":f'{API_Layer}'
         }
 
         response = requests.get(url, headers=headers)
