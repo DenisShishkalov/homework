@@ -6,8 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-
-def return_amount_trans(transactions: Any, cur) -> float:
+def return_amount_trans(transactions: Any) -> float:
     """
     Функция, которая принимает на вход транзакцию и возвращает сумму транзакции (amount) в рублях
     """
@@ -16,7 +15,7 @@ def return_amount_trans(transactions: Any, cur) -> float:
     if currency == 'RUB':
         return amount
     else:
-        url = f"https://api.apilayer.com/exchangerates_data/convert?to={cur}&from={currency}&amount={amount}"
+        url = f"https://api.apilayer.com/exchangerates_data/convert?to=RUB&from={currency}&amount={amount}"
         apikey = os.getenv('apikey')
         headers = {
             "apikey":f'{apikey}'
@@ -25,7 +24,7 @@ def return_amount_trans(transactions: Any, cur) -> float:
         response = requests.get(url, headers=headers)
         status_code = response.status_code
         print(f"Статус код: {status_code}")
-        return response.json()['result']
+        return response.json()
 
 
 if __name__ == '__main__':
@@ -41,5 +40,5 @@ if __name__ == '__main__':
                     "code": "USD"
                 }
             }
-        }, 'RUB'))
+        },))
     print(r)
