@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-def return_amount_trans(transactions: Any) -> float:
+def return_amount_trans(transactions: Any) -> Any:
     """
     Функция, которая принимает на вход транзакцию и возвращает сумму транзакции (amount) в рублях
     """
@@ -18,7 +18,7 @@ def return_amount_trans(transactions: Any) -> float:
         url = f"https://api.apilayer.com/exchangerates_data/convert?to=RUB&from={currency}&amount={amount}"
         API_Layer = os.getenv('API_Layer')
         headers = {
-            "apikey":f'{API_Layer}'
+            "apikey": f'{API_Layer}'
         }
 
         response = requests.get(url, headers=headers)
