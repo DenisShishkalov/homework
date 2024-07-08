@@ -21,8 +21,8 @@ def return_amount_trans(transactions: dict) -> float:
         }
 
         response = requests.get(url, headers=headers)
-        status_code = response.status_code
-        print(f"Статус код: {status_code}")
+        # status_code = response.status_code
+        # print(f"Статус код: {status_code}")
         data = response.json()
         return float(data['result'])
 

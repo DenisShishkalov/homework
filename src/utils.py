@@ -15,7 +15,8 @@ def get_info(file_json: str) -> Any:
             return trans
 
         except [FileNotFoundError, json.JSONDecodeError]:
-            return []
+            raise []
+            # return []
 
 
 print(get_info(r"C:\Users\Денис\PycharmProjects\01\data\operations.json"))
