@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="706efac5-6c18-49d7-95b5-7f94d1bca72d" name="Changes" comment="add func get_info">
-      <change afterPath="$PROJECT_DIR$/src/.env.example" afterDir="false" />
+    <list default="true" id="706efac5-6c18-49d7-95b5-7f94d1bca72d" name="Changes" comment="add .env.example">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/external_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/external_api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,6 +52,7 @@
     &quot;Python tests.Python tests for test_masks.test_get_mask_account_number_none.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for test_processing.test_filter_by_state.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for test_processing.test_sort_by_date.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_utils.test_get_info.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for test_widget.test_get_data.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for test_widget.test_mask_account_card.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for test_widget.test_mask_account_none.executor&quot;: &quot;Run&quot;,
@@ -80,7 +79,7 @@
       <recent name="C:\Users\Денис\PycharmProjects\01" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_external_api.test_return_amount_trans">
+  <component name="RunManager" selected="Python tests.Python tests for test_utils.test_get_info">
     <configuration name="external_api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="01" />
       <option name="ENV_FILES" value="" />
@@ -125,21 +124,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_decorators.test_log" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="01" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_decorators.test_log&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Python tests for test_decorators.test_log_exeption" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="01" />
       <option name="ENV_FILES" value="" />
@@ -170,6 +154,21 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for test_utils.test_get_info" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="01" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_utils.test_get_info&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest in tests" type="tests" factoryName="py.test" nameIsGenerated="true">
       <module name="01" />
       <option name="ENV_FILES" value="" />
@@ -192,17 +191,17 @@
       <item itemvalue="Python.external_api" />
       <item itemvalue="Python.utils" />
       <item itemvalue="Python tests.pytest in tests" />
+      <item itemvalue="Python tests.Python tests for test_utils.test_get_info" />
       <item itemvalue="Python tests.Python tests for test_external_api.test_return_amount_trans" />
-      <item itemvalue="Python tests.Python tests for test_decorators.test_log" />
       <item itemvalue="Python tests.Python tests for test_decorators.test_log_exeption" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_utils.test_get_info" />
         <item itemvalue="Python tests.Python tests for test_external_api.test_return_amount_trans" />
         <item itemvalue="Python.external_api" />
         <item itemvalue="Python.utils" />
         <item itemvalue="Python tests.Python tests for test_decorators.test_log_exeption" />
-        <item itemvalue="Python tests.Python tests for test_decorators.test_log" />
       </list>
     </recent_temporary>
   </component>
@@ -318,7 +317,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720344104630</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add .env.example">
+      <option name="closed" value="true" />
+      <created>1720427817032</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1720427817032</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -333,6 +340,7 @@
     <MESSAGE value="error correction docstring decorator" />
     <MESSAGE value="done" />
     <MESSAGE value="add func get_info" />
-    <option name="LAST_COMMIT_MESSAGE" value="add func get_info" />
+    <MESSAGE value="add .env.example" />
+    <option name="LAST_COMMIT_MESSAGE" value="add .env.example" />
   </component>
 </project>
