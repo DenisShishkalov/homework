@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="706efac5-6c18-49d7-95b5-7f94d1bca72d" name="Changes" comment="done">
+    <list default="true" id="706efac5-6c18-49d7-95b5-7f94d1bca72d" name="Changes" comment="fix Error">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/decorators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mylog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/external_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/external_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_external_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_external_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/homework_11_1" />
+        <entry key="$PROJECT_DIR$" value="feature/homework_11_2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,54 +41,92 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests for test_decorators.test_log.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_decorators.test_log_exeption.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_generators.test_card_number_generator.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_generators.test_filter_by_currency.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_generators.test_transaction_descriptions.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_masks.test_get_mask_account_for_account.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_masks.test_get_mask_account_invalid_len.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_masks.test_get_mask_account_letter.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_masks.test_get_mask_account_number.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_masks.test_get_mask_account_number_none.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_processing.test_filter_by_state.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_processing.test_sort_by_date.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_widget.test_get_data.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_widget.test_mask_account_card.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_widget.test_mask_account_none.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_generators.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_widget.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.pytest in tests.executor&quot;: &quot;Run&quot;,
-    &quot;Python.decorators.executor&quot;: &quot;Run&quot;,
-    &quot;Python.generators.executor&quot;: &quot;Run&quot;,
-    &quot;Python.processing.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/homework__11__2&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Денис/PycharmProjects/01/tests&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests for test_decorators.test_log.executor": "Run",
+    "Python tests.Python tests for test_decorators.test_log_exeption.executor": "Run",
+    "Python tests.Python tests for test_external_api.test_return_amount_trans.executor": "Run",
+    "Python tests.Python tests for test_generators.test_card_number_generator.executor": "Run",
+    "Python tests.Python tests for test_generators.test_filter_by_currency.executor": "Run",
+    "Python tests.Python tests for test_generators.test_transaction_descriptions.executor": "Run",
+    "Python tests.Python tests for test_masks.test_get_mask_account_for_account.executor": "Run",
+    "Python tests.Python tests for test_masks.test_get_mask_account_invalid_len.executor": "Run",
+    "Python tests.Python tests for test_masks.test_get_mask_account_letter.executor": "Run",
+    "Python tests.Python tests for test_masks.test_get_mask_account_number.executor": "Run",
+    "Python tests.Python tests for test_masks.test_get_mask_account_number_none.executor": "Run",
+    "Python tests.Python tests for test_processing.test_filter_by_state.executor": "Run",
+    "Python tests.Python tests for test_processing.test_sort_by_date.executor": "Run",
+    "Python tests.Python tests for test_utils.test_get_info.executor": "Run",
+    "Python tests.Python tests for test_widget.test_get_data.executor": "Run",
+    "Python tests.Python tests for test_widget.test_mask_account_card.executor": "Run",
+    "Python tests.Python tests for test_widget.test_mask_account_none.executor": "Run",
+    "Python tests.Python tests in test_external_api.py.executor": "Run",
+    "Python tests.Python tests in test_generators.py.executor": "Run",
+    "Python tests.Python tests in test_utils.py.executor": "Run",
+    "Python tests.Python tests in test_widget.py.executor": "Run",
+    "Python tests.pytest in tests.executor": "Run",
+    "Python.decorators.executor": "Run",
+    "Python.external_api.executor": "Run",
+    "Python.generators.executor": "Run",
+    "Python.proba.executor": "Run",
+    "Python.processing.executor": "Run",
+    "Python.test.executor": "Run",
+    "Python.utils.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "feature/homework__12__1",
+    "last_opened_file_path": "C:/Users/Денис/PycharmProjects/01/tests",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Денис\PycharmProjects\01\src" />
+      <recent name="C:\Users\Денис\PycharmProjects\01" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_decorators.test_log_exeption">
-    <configuration name="Python tests for test_decorators.test_log" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests for test_external_api.test_return_amount_trans">
+    <configuration name="external_api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="01" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_decorators.test_log&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/external_api.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="utils" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="01" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/utils.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <configuration name="Python tests for test_decorators.test_log_exeption" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
@@ -102,7 +144,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_generators.test_card_number_generator" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_external_api.test_return_amount_trans" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="01" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -113,11 +155,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_generators.test_card_number_generator&quot;" />
+      <option name="_new_target" value="&quot;test_external_api.test_return_amount_trans&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_generators.test_filter_by_currency" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_utils.test_get_info" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="01" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -128,22 +170,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_generators.test_filter_by_currency&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_generators.test_transaction_descriptions" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="01" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_generators.test_transaction_descriptions&quot;" />
+      <option name="_new_target" value="&quot;test_utils.test_get_info&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -166,20 +193,20 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.external_api" />
+      <item itemvalue="Python.utils" />
       <item itemvalue="Python tests.pytest in tests" />
-      <item itemvalue="Python tests.Python tests for test_decorators.test_log" />
+      <item itemvalue="Python tests.Python tests for test_utils.test_get_info" />
+      <item itemvalue="Python tests.Python tests for test_external_api.test_return_amount_trans" />
       <item itemvalue="Python tests.Python tests for test_decorators.test_log_exeption" />
-      <item itemvalue="Python tests.Python tests for test_generators.test_card_number_generator" />
-      <item itemvalue="Python tests.Python tests for test_generators.test_filter_by_currency" />
-      <item itemvalue="Python tests.Python tests for test_generators.test_transaction_descriptions" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_external_api.test_return_amount_trans" />
+        <item itemvalue="Python tests.Python tests for test_utils.test_get_info" />
+        <item itemvalue="Python.external_api" />
+        <item itemvalue="Python.utils" />
         <item itemvalue="Python tests.Python tests for test_decorators.test_log_exeption" />
-        <item itemvalue="Python tests.Python tests for test_decorators.test_log" />
-        <item itemvalue="Python tests.Python tests for test_generators.test_card_number_generator" />
-        <item itemvalue="Python tests.Python tests for test_generators.test_transaction_descriptions" />
-        <item itemvalue="Python tests.Python tests for test_generators.test_filter_by_currency" />
       </list>
     </recent_temporary>
   </component>
@@ -271,7 +298,63 @@
       <option name="project" value="LOCAL" />
       <updated>1719595495846</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="error correction docstring decorator">
+      <option name="closed" value="true" />
+      <created>1719642795868</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1719642795868</updated>
+    </task>
+    <task id="LOCAL-00011" summary="done">
+      <option name="closed" value="true" />
+      <created>1720334680220</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1720334680220</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add func get_info">
+      <option name="closed" value="true" />
+      <created>1720344104630</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1720344104630</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add .env.example">
+      <option name="closed" value="true" />
+      <created>1720427817032</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1720427817032</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fix test utils">
+      <option name="closed" value="true" />
+      <created>1720446005128</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1720446005128</updated>
+    </task>
+    <task id="LOCAL-00015" summary="done">
+      <option name="closed" value="true" />
+      <created>1720446748043</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1720446748043</updated>
+    </task>
+    <task id="LOCAL-00016" summary="fix Error">
+      <option name="closed" value="true" />
+      <created>1720454890123</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1720454890123</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -283,7 +366,12 @@
     <MESSAGE value="create func transaction_descriptions" />
     <MESSAGE value="add html test_statistic" />
     <MESSAGE value="add file test decorators" />
+    <MESSAGE value="error correction docstring decorator" />
+    <MESSAGE value="add func get_info" />
+    <MESSAGE value="add .env.example" />
+    <MESSAGE value="fix test utils" />
     <MESSAGE value="done" />
-    <option name="LAST_COMMIT_MESSAGE" value="done" />
+    <MESSAGE value="fix Error" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix Error" />
   </component>
 </project>
