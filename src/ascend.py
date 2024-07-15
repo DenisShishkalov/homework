@@ -1,11 +1,15 @@
 import csv
 
 
-def reader_csv_file(file: str):
+def reader_csv_file(file: str) -> None:
+    """
+    Функция, считывающая информацию из csv файла
+    """
     with open(file) as f:
         reader = csv.reader(f)
-        return reader
+        next(reader)
+        for row in reader:
+            print(row)
 
 
-print(reader_csv_file(r'C:\Users\Денис\Downloads\transactions.csv'))
-
+reader_csv_file(r'C:\Users\Денис\Downloads\transactions.csv')
