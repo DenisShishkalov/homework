@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="706efac5-6c18-49d7-95b5-7f94d1bca72d" name="Changes" comment="fix Error">
+    <list default="true" id="706efac5-6c18-49d7-95b5-7f94d1bca72d" name="Changes" comment="fix bags utils">
+      <change afterPath="$PROJECT_DIR$/src/ascend.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reader_xlsx.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/masks.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/masks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/homework_11_2" />
+        <entry key="$PROJECT_DIR$" value="feature/homework_12_2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -63,16 +65,18 @@
     "Python tests.Python tests in test_utils.py.executor": "Run",
     "Python tests.Python tests in test_widget.py.executor": "Run",
     "Python tests.pytest in tests.executor": "Run",
+    "Python.ascend.executor": "Run",
     "Python.decorators.executor": "Run",
     "Python.external_api.executor": "Run",
     "Python.generators.executor": "Run",
     "Python.masks.executor": "Run",
     "Python.proba.executor": "Run",
     "Python.processing.executor": "Run",
+    "Python.reader_xlsx.executor": "Run",
     "Python.test.executor": "Run",
     "Python.utils.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/homework__12__1",
+    "git-widget-placeholder": "feature/homework__13__1",
     "last_opened_file_path": "C:/Users/Денис/PycharmProjects/01/tests",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
@@ -353,7 +357,31 @@
       <option name="project" value="LOCAL" />
       <updated>1720454890123</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="update README, create log_files">
+      <option name="closed" value="true" />
+      <created>1720703282062</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1720703282062</updated>
+    </task>
+    <task id="LOCAL-00018" summary="done">
+      <option name="closed" value="true" />
+      <created>1720703537917</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1720703537917</updated>
+    </task>
+    <task id="LOCAL-00019" summary="fix bags utils">
+      <option name="closed" value="true" />
+      <created>1720704047649</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1720704047649</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -369,8 +397,10 @@
     <MESSAGE value="add func get_info" />
     <MESSAGE value="add .env.example" />
     <MESSAGE value="fix test utils" />
-    <MESSAGE value="done" />
     <MESSAGE value="fix Error" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix Error" />
+    <MESSAGE value="update README, create log_files" />
+    <MESSAGE value="done" />
+    <MESSAGE value="fix bags utils" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bags utils" />
   </component>
 </project>
