@@ -6,11 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="706efac5-6c18-49d7-95b5-7f94d1bca72d" name="Changes" comment="fix Error">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mylog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mylog.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/external_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/external_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/masks.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/masks.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_external_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_external_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +66,7 @@
     "Python.decorators.executor": "Run",
     "Python.external_api.executor": "Run",
     "Python.generators.executor": "Run",
+    "Python.masks.executor": "Run",
     "Python.proba.executor": "Run",
     "Python.processing.executor": "Run",
     "Python.test.executor": "Run",
@@ -84,7 +83,7 @@
       <recent name="C:\Users\Денис\PycharmProjects\01" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_external_api.test_return_amount_trans">
+  <component name="RunManager">
     <configuration name="external_api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="01" />
       <option name="ENV_FILES" value="" />
@@ -202,10 +201,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.utils" />
         <item itemvalue="Python tests.Python tests for test_external_api.test_return_amount_trans" />
         <item itemvalue="Python tests.Python tests for test_utils.test_get_info" />
         <item itemvalue="Python.external_api" />
-        <item itemvalue="Python.utils" />
         <item itemvalue="Python tests.Python tests for test_decorators.test_log_exeption" />
       </list>
     </recent_temporary>
