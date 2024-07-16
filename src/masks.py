@@ -1,4 +1,5 @@
 import logging
+from typing import Any
 
 logger = logging.getLogger("masks")
 logger.setLevel(logging.INFO)
@@ -8,7 +9,7 @@ file_handler.setFormatter(file_formatter)
 logger.addHandler(file_handler)
 
 
-def get_mask_account(number: str) -> str:
+def get_mask_account(number: str) -> Any:
     """Функция, маскирующая номер счета или карты"""
     try:
         logger.info("Проверяем корректность полученных данных и маскируем их")

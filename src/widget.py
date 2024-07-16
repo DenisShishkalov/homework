@@ -1,8 +1,8 @@
 def mask_account_card(number: str) -> str:
-    """ Функция принимает номер карты или номер счета
+    """Функция принимает номер карты или номер счета
     :rtype: object
     """
-    name_card = ''
+    name_card = ""
 
     if "Счет " in number or "Счёт " in number:
         return f"Счет **{number[-4:]}"
@@ -19,7 +19,7 @@ print(mask_account_card(number="Visa 1245123412341234"))
 
 
 def get_data(data: str) -> str:
-    """ Функция преобразования даты """
+    """Функция преобразования даты"""
     return f"{data[8:10]}.{data[5:7]}.{data[0:4]}"
 
 

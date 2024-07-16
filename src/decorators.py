@@ -1,13 +1,14 @@
 from functools import wraps
-from typing import Callable, Any
+from typing import Any, Callable
 
 
 def log(filename: str | None = None) -> Callable:
-    """ Декоратор, логирующий вызов функции и ее результат в файл или консоль
+    """Декоратор, логирующий вызов функции и ее результат в файл или консоль
     :param filename: путь к файлу для записи логов. Если не указан, логи выводятся в консоль
     :return: Обертка функции, которая логирует вызов и ее результат
     """
-    def decorator(func: Any) -> Callable:
+
+    def decorator(func: Callable) -> Callable:
         @wraps(func)
         def inner(*args: Any, **kwargs: Any) -> Callable:
             try:
@@ -31,7 +32,7 @@ def log(filename: str | None = None) -> Callable:
 
 
 @log(filename="mylog.txt")
-def my_function(x, y):
+def my_function(x: int, y: int) -> int:
     """Функция, складывающая 2 числа"""
     return x + y
 
