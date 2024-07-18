@@ -10,7 +10,7 @@ def log(filename: str | None = None) -> Callable:
 
     def decorator(func: Callable) -> Callable:
         @wraps(func)
-        def inner(*args: Any, **kwargs: Any) -> Callable:
+        def inner(*args: Any, **kwargs: Any) -> Any:
             try:
                 if filename:
                     result = func(*args, **kwargs)
@@ -21,8 +21,8 @@ def log(filename: str | None = None) -> Callable:
                     print("\nmy_function ok")
 
             except Exception as e:
-                with open(filename, "a", encoding="utf-8") as file:
-                    file.write(f"\nmy_function error: {e} Inputs: {args}, {kwargs}")
+                # with open(filename, "a", encoding="utf-8") as file:
+                #     file.write(f"\nmy_function error: {e} Inputs: {args}, {kwargs}")
                 raise Exception(f"Ошибка: {e}")
             return result
 

@@ -282,6 +282,16 @@ files = [
 ]
 
 [[package]]
+name = "ignore"
+version = "0.1.4"
+description = "Download .gitignore files for a given language"
+optional = false
+python-versions = "*"
+files = [
+    {file = "ignore-0.1.4.tar.gz", hash = "sha256:396a1f4c73e0061b2cf9a2ae44078047156e86142765b27ad5e50bb559654cdd"},
+]
+
+[[package]]
 name = "iniconfig"
 version = "2.0.0"
 description = "brain-dead simple config-ini parsing"
@@ -737,4 +747,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "5c9b91077d0db7a199368d4bf6e600b1ed97086654c5d1987444910f781b3922"
+content-hash = "6739ceb5b92e39c9949494b7b1331d29fd79a48ea72ad52ae2a7f4fb3a890750"
