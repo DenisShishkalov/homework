@@ -1,4 +1,4 @@
-import os
+import re
 
 import pandas as pd
 
@@ -96,7 +96,12 @@ def main():
             "Отфильтровать список транзакций по определенному слову описании? Да/Нет\nВвод: ").lower()
         if question_description == "да":
             question_description_word = input("Введите слово: ")
-            last_filter = grouping_operations(new_list_sort, question_description_word)
+            operations_ = []
+            for i in new_list_sort:
+                if i.get('description'):
+                    operations_.append(i)
+            last_filter = [trans for trans in operations_ if re.findall(question_description_word, trans['description'])]
+
             print(last_filter)
             break
         elif question_description == "нет":
