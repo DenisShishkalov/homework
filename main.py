@@ -1,8 +1,5 @@
 import re
-
 import pandas as pd
-
-from src.grouping import grouping_operations
 
 
 def main():
@@ -12,12 +9,12 @@ def main():
 
     # Программа приветствует пользователя:
 
-    global sorted_dictionary_list
-    greeting_user = '''Привет! Добро пожаловать в программу работы с банковскими транзакциями.
-    Выберите необходимый пункт меню : 
+    global sorted_dictionary_list, mask_account_card
+    greeting_user = """Привет! Добро пожаловать в программу работы с банковскими транзакциями.
+    Выберите необходимый пункт меню :
     1. Получить информацию о транзакциях из JSON-файла
-    2. Получить информацию о транзакциях из CSV-файла 
-    3. Получить информацию о транзакциях из XLSX-файла'''
+    2. Получить информацию о транзакциях из CSV-файла
+    3. Получить информацию о транзакциях из XLSX-файла'"""
 
     user_choice_file = input(f'{greeting_user}\n')
     while user_choice_file not in ['1', '2', '3']:
@@ -28,15 +25,15 @@ def main():
         if user_choice_file == '1':
             print('Для обработки выбран JSON-файл.')
             from src.utils import get_info
-            read_file = get_info(r"C:\Users\Денис\PycharmProjects\01\data\operations.json")
+            get_info(r"C:\Users\Денис\PycharmProjects\01\data\operations.json")
         elif user_choice_file == '2':
             print('Для обработки выбран CSV-файл.')
             from src.ascend import reader_csv_file
-            read_file = reader_csv_file(r'C:\Users\Денис\Downloads\transactions.csv')
+            reader_csv_file(r'C:\Users\Денис\Downloads\transactions.csv')
         elif user_choice_file == '3':
             print('Для обработки выбран XLSX-файл.')
             from src.reader_xlsx import reading_a_file
-            read_file = reading_a_file(pd.read_excel(r"C:\Users\Денис\Downloads\transactions_excel.xlsx"))
+            reading_a_file(pd.read_excel(r"C:\Users\Денис\Downloads\transactions_excel.xlsx"))
 
     choice_filter = '''\nВведите статус, по которому необходимо выполнить фильтрацию.
 Доступные для фильтровки статусы: EXECUTED, CANCELED, PENDING'''
@@ -60,9 +57,9 @@ def main():
     while True:
         user_choice_sorted_date = input('Отсортировать операции по дате? Да/Нет\n').lower()
         if user_choice_sorted_date == "да":
-            user_choice_sorted_increasing_decreasing = input("""Отсортировать: 
-                  1. По возрастанию
-                  2. По убыванию \n""")
+            user_choice_sorted_increasing_decreasing = input('Отсортировать: '
+                                                             '1. По возрастанию'
+                                                             '2. По убыванию \n')
             if user_choice_sorted_increasing_decreasing == "1":
                 sorted_dictionary_list = sorted(result, key=lambda d: d.get("date"), reverse=False)
             elif user_choice_sorted_increasing_decreasing == '2':
@@ -100,7 +97,8 @@ def main():
             for i in new_list_sort:
                 if i.get('description'):
                     operations_.append(i)
-            last_filter = [trans for trans in operations_ if re.findall(question_description_word, trans['description'])]
+            last_filter = [trans for trans in operations_ if
+                           re.findall(question_description_word, trans['description'])]
 
             print(last_filter)
             break
@@ -114,7 +112,19 @@ def main():
 
     print('Распечатываю итоговый список транзакций... \n'
           f'Всего банковских операций в выборке: {len(last_filter)}\n')
-
+    if len(last_filter) != 0:
+        for trans in last_filter:
+            if trans["description"] in "Открытие вклада" in trans["description"]:
+                from src.widget import get_data
+                print(f"{get_data(trans.get("date"))} Открытие вклада\n{mask_account_card(trans.get("to"))}"
+                      f"\nСумма:{trans["operationAmount"]['amount']}\n")
+            else:
+                from src.widget import mask_account_card
+                print(f"{get_data(trans["date"])} {trans["description"]}\n{mask_account_card(trans["from"])} -> "
+                      f"{mask_account_card(trans.get('to'))}\nСумма: {trans["operationAmount"]['amount']}"
+                      f" {trans['operationAmount']['currency']['code']}\n")
+    else:
+        print("Не найдено ни одной транзакции, подходящей под ваши условия фильтрации")
 
 
 if __name__ == '__main__':
