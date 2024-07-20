@@ -11,10 +11,13 @@ def filtered_operations(list_dict: str, search: str) -> list[dict]:
         data_ = json.load(f)
         operations_ = []
         for i in data_:
-            if i.get('description'):
+            if i.get('state'):
                 operations_.append(i)
-        return [trans for trans in operations_ if re.search(search, trans['description'])]
+        return [trans for trans in operations_ if re.search(search, trans['state'])]
 
 
-print(filtered_operations(r'C:\Users\Денис\PycharmProjects\01\data\operations.json', 'Перевод организации'))
-print(filtered_operations(r'C:\Users\Денис\PycharmProjects\01\data\operations.json', 'Открытие вклада'))
+if __name__ == '__main__':
+
+    filtered_operations(r'C:\Users\Денис\PycharmProjects\01\data\operations.json', 'CANCELED')
+    filtered_operations(r'C:\Users\Денис\PycharmProjects\01\data\operations.json', 'PENDING')
+    filtered_operations(r'C:\Users\Денис\PycharmProjects\01\data\operations.json', 'EXECUTED')

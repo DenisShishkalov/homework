@@ -28,4 +28,4 @@ def get_info(file_json: str) -> Any:
             return []
 
 
-print(type(get_info(r"C:\Users\Денис\PycharmProjects\01\data\operations.json")))
+print(get_info(r"C:\Users\Денис\PycharmProjects\01\data\operations.json"))
