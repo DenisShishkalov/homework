@@ -17,3 +17,4 @@ def filtered_operations(list_dict: str, search: str) -> list[dict]:
 
 
 print(filtered_operations(r'C:\Users\Денис\PycharmProjects\01\data\operations.json', 'Перевод организации'))
+print(filtered_operations(r'C:\Users\Денис\PycharmProjects\01\data\operations.json', 'Открытие вклада'))
