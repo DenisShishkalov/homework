@@ -24,6 +24,6 @@ def get_mask_account(number: str) -> Any:
         logger.error(f"Произошла ошибка: {ex}")
 
 
-# print(get_mask_account(number="3234123412341234"))
-# print(get_mask_account(number="53125674431399887757"))
+print(get_mask_account(number="3234123412341234"))
+print(get_mask_account(number="53125674431399887757"))
 print(get_mask_account(number="fdgswe4252312653467547"))

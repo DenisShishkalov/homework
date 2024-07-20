@@ -22,7 +22,9 @@ print(
 
 
 def sort_by_date(dictionary_list: list[dict], reverse_dictionary_list: bool = False) -> list:
-    """Функция сортировки операций по дате (по возрастанию)"""
+    """Функция сортировки операций по дате (по возрастанию)
+    :rtype: object
+    """
     sorted_dictionary_list = sorted(dictionary_list, key=lambda d: d.get("date"), reverse=reverse_dictionary_list)
 
     return sorted_dictionary_list

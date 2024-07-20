@@ -17,7 +17,13 @@ def filtered_operations(list_dict: str, search: str) -> list[dict]:
 
 
 if __name__ == '__main__':
+    # path = r'C:\Users\Денис\PycharmProjects\01\data\operations.json'
+    # with open(path, encoding='utf-8') as f:
+    #     data_ = json.load(f)
 
     filtered_operations(r'C:\Users\Денис\PycharmProjects\01\data\operations.json', 'CANCELED')
     filtered_operations(r'C:\Users\Денис\PycharmProjects\01\data\operations.json', 'PENDING')
     filtered_operations(r'C:\Users\Денис\PycharmProjects\01\data\operations.json', 'EXECUTED')
+    # filtered_operations(data_, 'CANCELED')
+    # filtered_operations(data_, 'PENDING')
+    # filtered_operations(data_, 'EXECUTED')

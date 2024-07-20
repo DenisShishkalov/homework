@@ -13,4 +13,5 @@ def reading_a_file(df: pd.DataFrame) -> Any:
 
 df = pd.read_excel(r"C:\Users\Денис\Downloads\transactions_excel.xlsx")
 result = reading_a_file(df)
+print(type(result))
 print(result)
