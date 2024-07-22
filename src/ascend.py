@@ -1,15 +1,16 @@
 import csv
+from config import file_transaction_csv
 
 
-def reader_csv_file(file: str) -> None:
+def reader_csv_file(file: str) -> list:
     """
     Функция, считывающая информацию из csv файла
     """
-    with open(file) as f:
+    with open(file, encoding='utf-8') as f:
+        csv.DictReader(f, delimiter=";")
         reader = csv.DictReader(f, delimiter=";")
-        next(reader)
-        for row in reader:
-            print(row)
+        return list(reader)
 
 
-reader_csv_file(r"C:\Users\Денис\Downloads\transactions.csv")
+reader_csv_file(file_transaction_csv)
+# print(reader_csv_file(file_transaction_csv))

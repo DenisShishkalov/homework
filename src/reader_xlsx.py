@@ -1,9 +1,8 @@
-from typing import Any
-
 import pandas as pd
+from config import file_transaction_xlsx
 
 
-def reading_a_file(df: pd.DataFrame) -> Any:
+def reading_a_file(df: pd.DataFrame) -> list[dict]:
     """
     Функция считывания информации из xlsx файла
     """
@@ -11,7 +10,8 @@ def reading_a_file(df: pd.DataFrame) -> Any:
     return df.to_dict(orient="records")
 
 
-df = pd.read_excel(r"C:\Users\Денис\Downloads\transactions_excel.xlsx")
-result = reading_a_file(df)
-print(type(result))
-print(result)
+path = file_transaction_xlsx
+ret = pd.read_excel(path)
+
+reading_a_file(ret)
+# print(reading_a_file(ret))

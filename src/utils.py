@@ -2,6 +2,8 @@ import json
 import logging
 from typing import Any
 
+from config import file_transaction_json
+
 logger = logging.getLogger("utils")
 logger.setLevel(logging.INFO)
 file_handler = logging.FileHandler(r"C:\Users\Денис\PycharmProjects\01\logs\utils.log", "w")
@@ -28,4 +30,5 @@ def get_info(file_json: str) -> Any:
             return []
 
 
-print(get_info(r"C:\Users\Денис\PycharmProjects\01\data\operations.json"))
+get_info(file_transaction_json)
+# print(get_info(file_transaction_json))

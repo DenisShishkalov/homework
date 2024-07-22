@@ -1,6 +1,8 @@
 import json
 from collections import Counter
 
+from config import file_transaction_json
+
 
 def grouping_operations(transactions: list[dict], category: list) -> dict:
     """
@@ -19,7 +21,7 @@ def grouping_operations(transactions: list[dict], category: list) -> dict:
 
 
 if __name__ == '__main__':
-    path = r'..\data\operations.json'
+    path = file_transaction_json
     with open(path, encoding='utf-8') as f:
         sentence = json.load(f)
     list_category = ['Перевод организации', 'Открытие вклада', 'Перевод с карты на карту', 'Перевод с карты на счет']
