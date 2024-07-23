@@ -1,5 +1,5 @@
 import pandas as pd
-from config import file_transaction_xlsx
+from config import file_transaction_xlsx  # type: ignore
 
 
 def reading_a_file(df: pd.DataFrame) -> list[dict]:

@@ -1,7 +1,7 @@
 import json
 from collections import Counter
 
-from config import file_transaction_json
+from config import file_transaction_json  # type: ignore
 
 
 def grouping_operations(transactions: list[dict], category: list) -> dict:

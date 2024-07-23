@@ -1,5 +1,5 @@
 import csv
-from config import file_transaction_csv
+from config import file_transaction_csv  # type: ignore
 
 
 def reader_csv_file(file: str) -> list:

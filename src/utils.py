@@ -2,7 +2,7 @@ import json
 import logging
 from typing import Any
 
-from config import file_transaction_json
+from config import file_transaction_json  # type: ignore
 
 logger = logging.getLogger("utils")
 logger.setLevel(logging.INFO)

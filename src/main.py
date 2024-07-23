@@ -1,13 +1,15 @@
-from config import file_transaction_csv, file_transaction_json
-from filtering_by_word import filtered_by_descriptions
-from processing import filter_by_state
-from widget import mask_account_card, get_data
-from utils import get_info
-from ascend import reader_csv_file
-from reader_xlsx import reading_a_file, ret
+from typing import Any
+
+from config import file_transaction_csv, file_transaction_json  # type: ignore
+from filtering_by_word import filtered_by_descriptions  # type: ignore
+from processing import filter_by_state  # type: ignore
+from widget import mask_account_card, get_data  # type: ignore
+from utils import get_info  # type: ignore
+from ascend import reader_csv_file  # type: ignore
+from reader_xlsx import reading_a_file, ret  # type: ignore
 
 
-def main():
+def main() -> Any:
     """
     Функция, которая отвечает за основную логику проекта и связывает функциональности между собой.
     """
@@ -88,7 +90,7 @@ def main():
         question_description = input(
             "Отфильтровать список транзакций по определенному слову в описании? Да/Нет\nВвод: ").lower()
         if question_description == "да":
-            question_description_word = input("Введите слово: ")
+            question_description_word = input("Введите слово: ").capitalize()
             last_filter = filtered_by_descriptions(third_filter, f'{question_description_word}')
             # print(last_filter)
             break
