@@ -1,7 +1,8 @@
 import csv
+from pathlib import Path
 
 
-def reader_csv_file(file: str) -> list:
+def reader_csv_file(file: Path) -> list:
     """
     Функция, считывающая информацию из csv файла
     """

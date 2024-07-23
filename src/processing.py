@@ -12,7 +12,7 @@ def filter_by_state(dictionary_list: list, state: str = "EXECUTED") -> list:
     return new_list_
 
 
-def sort_by_date(dictionary_list: list[dict], reverse_dictionary_list: bool = False) -> Any:
+def sort_by_date(dictionary_list: list, reverse_dictionary_list: bool = False) -> Any:
     """
     Функция сортировки операций по дате (по возрастанию)
     """

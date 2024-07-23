@@ -22,14 +22,3 @@ def return_amount_trans(transactions: dict) -> float:
         response = requests.get(url, headers=headers)
         data = response.json()
         return float(data["result"])
-
-
-if __name__ == "__main__":
-    r = return_amount_trans(
-        {
-            "id": 41428829,
-            "state": "EXECUTED",
-            "date": "2019-07-03T18:35:29.512364",
-            "operationAmount": {"amount": "8221.37", "currency": {"name": "USD", "code": "USD"}},
-        },
-    )

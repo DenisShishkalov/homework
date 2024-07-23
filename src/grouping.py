@@ -20,8 +20,6 @@ def grouping_operations(transactions: list[dict], category: list) -> dict:
     return count_dict
 
 
-if __name__ == '__main__':
-    path = file_transaction_json
-    with open(path, encoding='utf-8') as f:
-        sentence = json.load(f)
-    list_category = ['Перевод организации', 'Открытие вклада', 'Перевод с карты на карту', 'Перевод с карты на счет']
+path = file_transaction_json
+with open(path, encoding='utf-8') as f:
+    sentence = json.load(f)

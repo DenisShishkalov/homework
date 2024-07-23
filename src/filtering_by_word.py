@@ -1,7 +1,7 @@
 import json
 import re
 
-from config import file_transaction_json  # type: ignore
+from src.config import file_transaction_json
 
 
 def filtered_by_descriptions(list_dict: list[dict], search: str) -> list[dict]:

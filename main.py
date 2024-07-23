@@ -38,7 +38,6 @@ def main() -> Any:
         elif user_choice_file == '3':
             print('Для обработки выбран XLSX-файл.')  # Для обработки выбран XLSX-файл.'
             full_file = reading_a_file(ret)
-    # print(full_file)
     choice_filter = '''\nВведите статус, по которому необходимо выполнить фильтрацию.
     Доступные для фильтровки статусы: EXECUTED, CANCELED, PENDING'''  # Фильтрация по статусу
     user_choice_filter = input(f'{choice_filter}\n').upper()
@@ -84,7 +83,6 @@ def main() -> Any:
         else:
             print("Данного варианта нет в списке, попробуйте еще раз: ")
             continue
-    # print(third_filter)
 
     while True:
         question_description = input(
@@ -92,11 +90,9 @@ def main() -> Any:
         if question_description == "да":
             question_description_word = input("Введите слово: ").capitalize()
             last_filter = filtered_by_descriptions(third_filter, f'{question_description_word}')
-            # print(last_filter)
             break
         elif question_description == "нет":
             last_filter = third_filter
-            # print(last_filter)
             break
         else:
             print("Данного варианта нет в списке, попробуйте еще раз: ")
