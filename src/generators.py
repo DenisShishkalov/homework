@@ -57,22 +57,10 @@ def filter_by_currency(trans: list, currency: str) -> Any:
             yield k["id"]
 
 
-usd_transactions = filter_by_currency(transactions, "USD")
-
-for func1 in range(3):
-    print(next(usd_transactions))
-
-
 def transaction_descriptions(info: list) -> Any:
     """Функция, принимающая список словарей, возвращающая описание каждой операции"""
     for i in info:
         yield i.get("description")
-
-
-descriptions = transaction_descriptions(transactions)
-
-for func2 in range(5):
-    print(next(descriptions))
 
 
 def card_number_generator(a: int, b: int) -> Any:
@@ -84,7 +72,3 @@ def card_number_generator(a: int, b: int) -> Any:
             card_number = "0" + card_number
         formatted_card_number = f"{card_number[:4]} {card_number[4:8]} {card_number[8:12]} {card_number[12:]}"
         yield formatted_card_number
-
-
-for card_number in card_number_generator(1, 5):
-    print(card_number)

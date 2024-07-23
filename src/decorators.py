@@ -35,7 +35,3 @@ def log(filename: str | None = None) -> Callable:
 def my_function(x: int, y: int) -> int:
     """Функция, складывающая 2 числа"""
     return x + y
-
-
-print(my_function(1, 2))
-# print(my_function(['fdh'], 'gfh'))

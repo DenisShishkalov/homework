@@ -1,12 +1,12 @@
 from typing import Any
 
-from config import file_transaction_csv, file_transaction_json  # type: ignore
-from filtering_by_word import filtered_by_descriptions  # type: ignore
-from processing import filter_by_state  # type: ignore
-from widget import mask_account_card, get_data  # type: ignore
-from utils import get_info  # type: ignore
-from ascend import reader_csv_file  # type: ignore
-from reader_xlsx import reading_a_file, ret  # type: ignore
+from src.config import file_transaction_csv, file_transaction_json
+from src.filtering_by_word import filtered_by_descriptions
+from src.processing import filter_by_state
+from src.widget import mask_account_card, get_data
+from src.utils import get_info
+from src.ascend import reader_csv_file
+from src.reader_xlsx import reading_a_file, ret
 
 
 def main() -> Any:

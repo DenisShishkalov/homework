@@ -22,8 +22,3 @@ def get_mask_account(number: str) -> Any:
             return "Введены некорректные данные"
     except Exception as ex:
         logger.error(f"Произошла ошибка: {ex}")
-
-
-# get_mask_account(number="3234123412341234")
-# get_mask_account(number="53125674431399887757")
-# get_mask_account(number="fdgswe4252312653467547")

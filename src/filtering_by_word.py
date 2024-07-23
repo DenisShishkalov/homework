@@ -20,5 +20,3 @@ path = file_transaction_json
 with open(path, encoding='utf-8') as f:
     data_ = json.load(f)
     search_string = 'Перевод организации'
-# print(filtered_by_descriptions(data_, search_string))
-    filtered_by_descriptions(data_, search_string)

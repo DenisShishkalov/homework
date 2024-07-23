@@ -20,8 +20,6 @@ def return_amount_trans(transactions: dict) -> float:
         headers = {"apikey": f"{API_KEY}"}
 
         response = requests.get(url, headers=headers)
-        # status_code = response.status_code
-        # print(f"Статус код: {status_code}")
         data = response.json()
         return float(data["result"])
 
@@ -35,4 +33,3 @@ if __name__ == "__main__":
             "operationAmount": {"amount": "8221.37", "currency": {"name": "USD", "code": "USD"}},
         },
     )
-    print(r)

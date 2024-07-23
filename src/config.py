@@ -1,6 +1,8 @@
-import os
+from pathlib import Path
 
-current_dir = os.path.dirname(os.path.abspath(__file__))
-file_transaction_xlsx = os.path.join(current_dir, "../data", "transactions_excel.xlsx")
-file_transaction_csv = os.path.join(current_dir, "../data", "transactions.csv")
-file_transaction_json = os.path.join(current_dir, "../data", "transactions.json")
+BASE_DIR = Path(__file__).resolve().parent.parent
+DATA_DIR = BASE_DIR / 'data'
+
+file_transaction_xlsx = DATA_DIR / 'transactions_excel.xlsx'
+file_transaction_csv = DATA_DIR / 'transactions.csv'
+file_transaction_json = DATA_DIR / 'transactions.json'

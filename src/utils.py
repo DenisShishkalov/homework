@@ -2,7 +2,6 @@ import json
 import logging
 from typing import Any
 
-from config import file_transaction_json  # type: ignore
 
 logger = logging.getLogger("utils")
 logger.setLevel(logging.INFO)
@@ -28,7 +27,3 @@ def get_info(file_json: str) -> Any:
         except [FileNotFoundError, json.JSONDecodeError] as ex:
             logger.error(f"Произошла ошибка: {ex}")
             return []
-
-
-get_info(file_transaction_json)
-# print(get_info(file_transaction_json))
