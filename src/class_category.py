@@ -1,7 +1,6 @@
 from src.class_product import Product
 
 
-
 class Category:
     name: str
     description: str
