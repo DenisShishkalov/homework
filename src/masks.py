@@ -1,14 +1,17 @@
 import logging
+from typing import Any
+
+from src.config import masks_log
 
 logger = logging.getLogger("masks")
 logger.setLevel(logging.INFO)
-file_handler = logging.FileHandler(r"C:\Users\Денис\PycharmProjects\01\logs\masks.log", "w")
+file_handler = logging.FileHandler(masks_log, "w")
 file_formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s: %(message)s")
 file_handler.setFormatter(file_formatter)
 logger.addHandler(file_handler)
 
 
-def get_mask_account(number: str) -> str:
+def get_mask_account(number: str) -> Any:
     """Функция, маскирующая номер счета или карты"""
     try:
         logger.info("Проверяем корректность полученных данных и маскируем их")
@@ -21,8 +24,3 @@ def get_mask_account(number: str) -> str:
             return "Введены некорректные данные"
     except Exception as ex:
         logger.error(f"Произошла ошибка: {ex}")
-
-
-# print(get_mask_account(number="3234123412341234"))
-# print(get_mask_account(number="53125674431399887757"))
-print(get_mask_account(number="fdgswe4252312653467547"))

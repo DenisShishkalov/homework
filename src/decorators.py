@@ -1,15 +1,16 @@
 from functools import wraps
-from typing import Callable, Any
+from typing import Any, Callable
 
 
 def log(filename: str | None = None) -> Callable:
-    """ Декоратор, логирующий вызов функции и ее результат в файл или консоль
+    """Декоратор, логирующий вызов функции и ее результат в файл или консоль
     :param filename: путь к файлу для записи логов. Если не указан, логи выводятся в консоль
     :return: Обертка функции, которая логирует вызов и ее результат
     """
-    def decorator(func: Any) -> Callable:
+
+    def decorator(func: Callable) -> Callable:
         @wraps(func)
-        def inner(*args: Any, **kwargs: Any) -> Callable:
+        def inner(*args: Any, **kwargs: Any) -> Callable | Any:
             try:
                 if filename:
                     result = func(*args, **kwargs)
@@ -20,7 +21,7 @@ def log(filename: str | None = None) -> Callable:
                     print("\nmy_function ok")
 
             except Exception as e:
-                with open(filename, "a", encoding="utf-8") as file:
+                with open(filename, "a", encoding="utf-8") as file:  # type: ignore
                     file.write(f"\nmy_function error: {e} Inputs: {args}, {kwargs}")
                 raise Exception(f"Ошибка: {e}")
             return result
@@ -31,10 +32,6 @@ def log(filename: str | None = None) -> Callable:
 
 
 @log(filename="mylog.txt")
-def my_function(x, y):
+def my_function(x: int, y: int) -> int:
     """Функция, складывающая 2 числа"""
     return x + y
-
-
-print(my_function(1, 2))
-# print(my_function(['fdh'], 'gfh'))
