@@ -45,3 +45,21 @@ my_function error: my_function() missing 2 required positional arguments: 'x' an
 my_function ok
 my_function ok
 my_function error: my_function() missing 2 required positional arguments: 'x' and 'y' Inputs: (), {}
+my_function ok
+my_function error: my_function() missing 2 required positional arguments: 'x' and 'y' Inputs: (), {}
+my_function ok
+my_function error: my_function() missing 2 required positional arguments: 'x' and 'y' Inputs: (), {}
+my_function ok
+my_function error: my_function() missing 2 required positional arguments: 'x' and 'y' Inputs: (), {}
+my_function ok
+my_function error: my_function() missing 2 required positional arguments: 'x' and 'y' Inputs: (), {}
+my_function ok
+my_function error: my_function() missing 2 required positional arguments: 'x' and 'y' Inputs: (), {}
+my_function ok
+my_function error: my_function() missing 2 required positional arguments: 'x' and 'y' Inputs: (), {}
+my_function ok
+my_function error: my_function() missing 2 required positional arguments: 'x' and 'y' Inputs: (), {}
+my_function ok
+my_function error: my_function() missing 2 required positional arguments: 'x' and 'y' Inputs: (), {}
+my_function ok
+my_function error: my_function() missing 2 required positional arguments: 'x' and 'y' Inputs: (), {}

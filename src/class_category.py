@@ -1,6 +1,7 @@
 from src.class_product import Product
 
 
+
 class Category:
     name: str
     description: str
@@ -8,24 +9,53 @@ class Category:
     category_count = 0
     product_count = 0
 
-    def __init__(self, name, description, list_product=None):
+    def __init__(self, name, description, list_product):
         self.name = name
         self.description = description
-        self.list_product = list_product if list_product else []
+        self.list_product = list_product
         Category.category_count += 1
-        Category.product_count += len(list_product) if list_product else 0
+        Category.product_count += len(list_product)
 
 
-if __name__ == '__main__':
-    product1 = Product('Купить помидоры', "Помидоры для салата", 180.5, 15)
-    product2 = Product('Купить огурцы', "Огурцы для салата", 90, 30)
-    product3 = Product('Купить лук', "Лук для салата", 40, 3)
+if __name__ == "__main__":
+    product1 = Product("Samsung Galaxy S23 Ultra", "256GB, Серый цвет, 200MP камера", 180000.0, 5)
+    product2 = Product("Iphone 15", "512GB, Gray space", 210000.0, 8)
+    product3 = Product("Xiaomi Redmi Note 11", "1024GB, Синий", 31000.0, 14)
 
-    category = Category('Салат', "Салат домашний из 3 видов овощей", [product1, product2, product3])
+    print(product1.name)
+    print(product1.description)
+    print(product1.price)
+    print(product1.quantity)
 
-    print(category.name)
-    print(category.description)
-    print(category.list_product)
+    print(product2.name)
+    print(product2.description)
+    print(product2.price)
+    print(product2.quantity)
 
-    print(category.category_count)
-    print(category.product_count)
+    print(product3.name)
+    print(product3.description)
+    print(product3.price)
+    print(product3.quantity)
+
+    category1 = Category("Смартфоны",
+                         "Смартфоны, как средство не только коммуникации, но и получения дополнительных функций для удобства жизни",
+                         [product1, product2, product3])
+
+    print(category1.name == "Смартфоны")
+    print(category1.description)
+    print(len(category1.products))
+    print(category1.category_count)
+    print(category1.product_count)
+
+    product4 = Product("55\" QLED 4K", "Фоновая подсветка", 123000.0, 7)
+    category2 = Category("Телевизоры",
+                         "Современный телевизор, который позволяет наслаждаться просмотром, станет вашим другом и помощником",
+                         [product4])
+
+    print(category2.name)
+    print(category2.description)
+    print(len(category2.products))
+    print(category2.products)
+
+    print(Category.category_count)
+    print(Category.product_count)
