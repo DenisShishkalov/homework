@@ -1,20 +1,5 @@
-from src.class_product import Product
-
-
-class Category:
-    name: str
-    description: str
-    list_product: list
-    category_count = 0
-    product_count = 0
-
-    def __init__(self, name, description, list_product):
-        self.name = name
-        self.description = description
-        self.list_product = list_product
-        Category.category_count += 1
-        Category.product_count += len(list_product)
-
+from src.category import Category
+from src.product import Product
 
 if __name__ == "__main__":
     product1 = Product("Samsung Galaxy S23 Ultra", "256GB, Серый цвет, 200MP камера", 180000.0, 5)
