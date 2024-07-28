@@ -51,8 +51,8 @@ def sort_():
 @pytest.fixture
 def first_category():
     return Category(
-        name='"Samsung Galaxy S23 Ultra"',
-        description="256GB, Серый цвет, 200MP камера",
+        name='Samsung Galaxy S23 Ultra',
+        description='256GB, Серый цвет, 200MP камера',
         list_product=[
             Product("Samsung Galaxy S23 Ultra", "256GB, Серый цвет, 200MP камера", 180000.0, 5),
             Product("Iphone 15", "512GB, Gray space", 210000.0, 8),
@@ -64,8 +64,8 @@ def first_category():
 @pytest.fixture
 def second_category():
     return Category(
-        name='"Samsung Galaxy S23 Ultra"',
-        description="256GB, Серый цвет, 200MP камера",
+        name=r'55\" QLED 4K',
+        description="Фоновая подсветка",
         list_product=[
             Product("55\" QLED 4K", "Фоновая подсветка", 123000.0, 7)
         ]
